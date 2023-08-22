@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api-backend-university</name>
+    </assembly>
+    <members>
+        <member name="M:Api_backend_university.Controllers.CareersController.RegisterCareer(Api_backend_university.DTO.CareerRegister)">
+            <summary>
+            Registrar una carrera
+            </summary>
+            <returns>Id de la carrera nuevo</returns>
+            <response code="200"> Exito </response>
+            <response code="500">Ha ocurrido un error en la creación.</response>
+        </member>
+        <member name="M:Api_backend_university.Controllers.CareersController.GetAllCareers">
+            <summary>
+            Obtener todas las carreras
+            </summary>
+            <param name=""></param>
+            <returns>Catalogo de las carreras</returns>
+        </member>
+        <member name="M:Api_backend_university.Controllers.ClassesController.RegisterClass(Api_backend_university.DTO.ClassRegister)">
+            <summary>
+            Registrar una clase
+            </summary>
+            <returns>Id de la clase nuevo</returns>
+            <response code="200"> Exito </response>
+            <response code="500">Ha ocurrido un error en la creación.</response>
+        </member>
+        <member name="M:Api_backend_university.Controllers.ClassesController.GetAllCareers">
+            <summary>
+            Obtener todas las clases
+            </summary>
+            <param name=""></param>
+            <returns>Catalogo de las clases</returns>
+        </member>
+        <member name="M:Api_backend_university.Controllers.CoursesController.RegisterCourse(Api_backend_university.DTO.CourseRegister)">
+            <summary>
+            Registrar un curso
+            </summary>
+            <returns>Id de la curso nuevo</returns>
+            <response code="200"> Exito </response>
+            <response code="500">Ha ocurrido un error en la creación.</response>
+        </member>
+        <member name="M:Api_backend_university.Controllers.CoursesController.GetAllCareers">
+            <summary>
+            Obtener todas los cursos
+            </summary>
+            <param name=""></param>
+            <returns>Catalogo de los cursos</returns>
+        </member>
+        <member name="M:Api_backend_university.Controllers.RolesController.GetAllRoles">
+            <summary>
+            Obtener catalogo de roles
+            </summary>
+            <param name=""></param>
+            <returns>Catalogo de los roles con su Id</returns>
+        </member>
+        <member name="M:Api_backend_university.Controllers.StudentsController.StudentRegister(Api_backend_university.DTO.StudentRegister)">
+            <summary>
+            Registrar estudiante
+            </summary>
+            <returns>Id del estudiante nuevo</returns>
+            <response code="200"> Exito </response>
+            <response code="500">Ha ocurrido un error en la creación.</response>
+        </member>
+        <member name="M:Api_backend_university.Controllers.StudentsController.GetAllStudentsWithCareer">
+            <summary>
+            Obtener todos los estudiantes con sus carreras
+            </summary>
+            <param name=""></param>
+            <returns>Catalogo de studiantes con sus carreras</returns>
+        </member>
+        <member name="M:Api_backend_university.Controllers.StudentsController.GetAllStudentsOfOneCareer(System.Int32)">
+            <summary>
+            Obtener todos los estudiantes de una carrera
+            </summary>
+            <param name=""></param>
+            <returns>Catalogo de studiantes de una carrera</returns>
+        </member>
+        <member name="M:Api_backend_university.Controllers.StudentsController.AddStudentToCourse(Api_backend_university.DTO.InscriptionRegister)">
+            <summary>
+            Inscribir estudiante a un curso
+            </summary>
+            <returns>Id de la inscripcion</returns>
+            <response code="200"> Exito </response>
+            <response code="500">Ha ocurrido un error en la creación.</response>
+        </member>
+        <member name="M:Api_backend_university.Controllers.StudentsController.GetCoursesStudent(System.Int32)">
+            <summary>
+            Obtener todos los cursos de un estudiante
+            </summary>
+            <param name=""></param>
+            <returns>Catalogo de cursos de un estudiante</returns>
+        </member>
+        <member name="M:Api_backend_university.Controllers.TeachersController.RegisterTeacher(Api_backend_university.DTO.TeacherRegister)">
+            <summary>
+            Registrar un maestro(a)
+            </summary>
+            <returns>Id del maestro(a) nuevo</returns>
+            <response code="200"> Exito </response>
+            <response code="500">Ha ocurrido un error en la creación.</response>
+        </member>
+        <member name="M:Api_backend_university.Controllers.TeachersController.GetAllCareers">
+            <summary>
+            Obtener todos los maestros
+            </summary>
+            <param name=""></param>
+            <returns>Catalogo de los maestros</returns>
+        </member>
+        <member name="M:Api_backend_university.Controllers.UsersController.RegisterUser(Api_backend_university.DTO.UserRegister)">
+            <summary>
+            Registrar usuario
+            </summary>
+            <returns>Id del usuario nuevo</returns>
+            <response code="200"> Exito </response>
+            <response code="500">Ha ocurrido un error a la hora de obtener la imagen.</response>
+        </member>
+        <member name="M:Api_backend_university.Controllers.UsersController.Login(Api_backend_university.DTO.Login)">
+            <summary>
+            Login
+            </summary>
+            <returns>Token e información</returns>
+            <response code="200"> Exito </response>
+            <response code="500">Ha ocurrido un error en la creación.</response>
+        </member>
+        <member name="M:Api_backend_university.Controllers.UsersController.GetAllUsers">
+            <summary>
+            Obtener todos las usuarios
+            </summary>
+            <param name=""></param>
+            <returns>Catalogo de usuarios</returns>
+        </member>
+    </members>
+</doc>
