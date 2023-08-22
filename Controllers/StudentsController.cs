@@ -189,7 +189,7 @@ namespace Api_backend_university.Controllers
                 }
                 List<ClassInformation> courses = await _inscription.GetAllCoursesToStudent(idStudent);
 
-                if (courses != null && courses.Count() > 0)
+                if ( courses.Count() > 0)
                 {
                     answer.Success = true;
                     answer.Message = "Search succes";

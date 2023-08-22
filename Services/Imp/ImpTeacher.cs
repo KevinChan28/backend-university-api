@@ -21,7 +21,7 @@ namespace Api_backend_university.Services.Imp
             List<Teacher> teachers = await _teacherRepository.GetAllTeachers();
             List<TeacherInformation> teacherInformation = teachers.Select(a => new TeacherInformation
             {
-                Id = a.Id,
+                IdTeacher = a.Id,
                 Name = a.Name,
                 LastName = a.LastName,
                 Email = a.Email,

@@ -80,7 +80,7 @@ public partial class UniversityDb2Context : DbContext
             entity.ToTable("Class");
 
             entity.Property(e => e.Days)
-                .HasMaxLength(1)
+                .HasMaxLength(600)
                 .IsUnicode(false);
             entity.Property(e => e.EndTime).HasColumnType("time")
             .HasConversion(
@@ -91,7 +91,6 @@ public partial class UniversityDb2Context : DbContext
                 v => v.ToTimeSpan(),
                 v => TimeOnly.FromTimeSpan(v)
                 );
-
             entity.HasOne(d => d.Course).WithMany(p => p.Classes)
                 .HasForeignKey(d => d.CourseId)
                 .HasConstraintName("FK__Class__TeacherId__5070F446");

@@ -2,7 +2,7 @@
 {
     public class TeacherInformation
     {
-        public int Id { get; set; }
+        public int IdTeacher { get; set; }
 
         public string? Name { get; set; }
 

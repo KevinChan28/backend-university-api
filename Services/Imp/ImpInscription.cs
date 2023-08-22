@@ -38,12 +38,17 @@ namespace Api_backend_university.Services.Imp
                Days = x.Class.Days,
                Course = new InfoCourseOfStudent
                {
+                   IdCourse = x.Class.Course.Id,
                    Name = x.Class.Course.Name,
                    Description = x.Class.Course.Description,
+                   Semester = x.Class.Course.Semester
                },
                Teacher = new TeacherInformation
                {
-                   Name = x.Class.Teacher.Name
+                   IdTeacher = x.Class.Teacher.Id,
+                   Name = x.Class.Teacher.Name,
+                   LastName = x.Class.Teacher.LastName,
+                   Email = x.Class.Teacher.Email
                }
             }).ToList();
 
