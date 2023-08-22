@@ -17,7 +17,7 @@ namespace Api_backend_university.Repository.Imp
         public async Task<int> AddStudentToClass(Inscription inscription)
         {
             bool existStudent = _universityDb.Students.Any(a => a.Id == inscription.StudentId);
-            bool existCourse = _universityDb.Courses.Any(a => a.Id == inscription.ClassId);
+            bool existCourse = _universityDb.Classes.Any(a => a.Id == inscription.ClassId);
 
             if (existStudent && existCourse)
             {
@@ -32,7 +32,10 @@ namespace Api_backend_university.Repository.Imp
 
         public async Task<List<Inscription>> GetAllClassesToStudent(int studentId)
         {
-            return _universityDb.Inscriptions.Include(a => a.Class).Where(i => i.StudentId == studentId).AsEnumerable<Inscription>().ToList();
+            return _universityDb.Inscriptions.Include(a => a.Class)
+                .Include(a => a.Class.Teacher)
+                .Include(a => a.Class.Course)
+                .Where(i => i.StudentId == studentId).AsEnumerable<Inscription>().ToList();
         }
     }
 }

@@ -5,6 +5,6 @@ namespace Api_backend_university.Services
     public interface IClass
     {
         Task<int> RegisterClass(ClassRegister classRegister);
-        Task<List<Class>> GetAllClasses();
+        Task<List<ClassInformation>> GetAllClasses();
     }
 }

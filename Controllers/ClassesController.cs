@@ -78,7 +78,7 @@ namespace Api_backend_university.Controllers
             Answer answer = new Answer();
             try
             {
-                List<Class> careers = await _class.GetAllClasses();
+                List<ClassInformation> careers = await _class.GetAllClasses();
 
                 if (careers != null)
                 {
